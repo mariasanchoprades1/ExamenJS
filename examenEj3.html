@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+    <h3> FORMULARIO </h3>
+    <form action="" id="formulario">
+  
+        <label for="entrantes">Entrantes</label> <br>
+        <label for="check1">Ensalada especial</label>
+        <input type="checkbox" name="check" id="check1" value="Ensalada"><br>
+        
+        <label for="check2">Jamon Iberico</label>
+        <input type="checkbox" name="check" id="check2" value="Jamon"><br>
+        <br>
+
+        <label for="segundo">Segundo plato:</label><br>
+        <input type="radio" name="segundo-plato" value="pavo">Pavo <br>
+        <input type="radio" name="segundo-plato" value="salmon">Salmon <br>
+        <br>
+
+
+        <input type="button" value="Guardar cambios" onclick="mostrarOpcionesSeleccionadas()">
+        <input type="button" value="Borrar los datos introducidos" onclick="resetearFormulario()">
+    </form>
+
+    <script src="examenEj3.js"></script>
+</body>
+</html>

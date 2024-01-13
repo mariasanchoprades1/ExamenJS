@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="examenEj2.js" defer></script> 
+</head>
+<body>
+    <a class="cambiar-tamano" href="https://google.com">GOOGLE</a>
+    <br><br><br>
+    <a class="cambiar-tamano" href="https://www.marca.com">MARCA</a>
+    <br><br><br>
+    <a class="cambiar-tamano" href="https://www.elpais.com">PAIS</a>
+</body>
+</html>
+______________________
+
+
+document.addEventListener('DOMContentLoaded', function () { 
+    efectoHover();
+});
+
+function efectoHover() {
+    let enlaces = document.querySelectorAll(".cambiar-tamano");
+
+    enlaces.forEach(enlace => {
+        enlace.addEventListener('mouseover', function () {
+            this.style.fontSize = '20pt';
+        });
+
+        enlace.addEventListener('mouseout', function () {
+            this.style.fontSize = '12pt';
+        });
+    });
+}
